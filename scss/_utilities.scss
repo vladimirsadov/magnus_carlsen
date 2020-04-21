@@ -1,0 +1,192 @@
+.l-container {
+  max-width: $website-width;
+  margin: auto;
+  overflow: hidden;
+}
+
+.l-grid,
+.l-grid-inner {
+  display: grid;
+  gap: 2rem;
+}
+
+.l-flex,
+.l-flex-inner,
+.l-flex-inner-deeper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  &_ai-flex-start {
+    align-items: flex-start;
+  }
+
+  &_fd-column {
+    flex-direction: column;
+  }
+
+  &_jc-flex-start {
+    justify-content: flex-start;
+  }
+
+  &_jc-space-between {
+    justify-content: space-between;
+  }
+}
+
+.l-link-wrapper {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  &_main-color-hover:hover * {
+    color: $main-color;
+  }
+
+  &_secondary-color-hover:hover * {
+    color: $secondary-color;
+  }
+
+  &_scale-hover:hover * {
+    transform: scale(1.025);
+  }
+
+  &:hover .h-on-link-wrapper-hover-main-color {
+    color: $main-color;
+  }
+
+  &:hover .h-on-link-wrapper-hover-secondary-color {
+    color: $secondary-color;
+  }
+
+  &:hover .h-on-link-wrapper-hover-underline {
+    text-decoration: underline;
+  }
+}
+
+// Buttons
+.c-button {
+  display: inline-block;
+  font-size: 0.75rem;
+  line-height: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 0 0.5rem;
+  padding: 0.7rem 1.1rem;
+  border: 1px solid transparent;
+  border-radius: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &_dark {
+    background: transparent;
+    border: 1px solid $light-color;
+    color: $light-color;
+
+    &:hover {
+      background: $light-color;
+      color: set-text-color($light-color);
+    }
+  }
+
+  &_light {
+    background: $light-color;
+    color: set-text-color($light-color);
+
+    &:hover {
+      background: $medium-color;
+    }
+  }
+
+  &-invitational {
+    display: inline-block;
+    background: $light-color;
+    color: #000;
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    border: 2px solid $light-color;
+    width: 9rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+
+    .fas {
+      margin-right: 0.5rem;
+    }
+
+    &_transparent {
+      background: transparent;
+      color: $light-color;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &_orange-gradient {
+    background: radial-gradient(circle at 0 0, #f2a761, #e67575 50%, #e64949);
+    color: $light-color;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  &_subscription {
+    background: $light-color;
+    color: set-text-color($light-color);
+    font-size: 1rem;
+    padding: 0.75rem 1.4rem;
+    border-radius: 1.5rem;
+
+    &:hover {
+      background: $medium-color;
+    }
+  }
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 11px 17px;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  line-height: normal;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+}
+
+.btn {
+  &-light {
+    @extend %btn-shared;
+    background: $light-color;
+    color: set-text-color;
+
+    &:hover {
+      background: $medium-color;
+    }
+  }
+
+  &-invitational {
+    display: inline-block;
+    padding: 0.8rem 1.7rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: $light-color;
+    font-size: 1.125rem;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-left: 1rem;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

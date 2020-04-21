@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/08a19de342.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <title>Play Magnus - Chess Training, Magnus Carlsen</title>
+  </head>
+  <body>
+    <!-- Header BEM -->
+    <header class="с-header">
+      <div class="l-container l-flex l-flex_jc-space-between">
+        <div class="l-flex__item">
+          <a class="c-app-logo" href="#">
+            <img
+              class="c-app-logo__image"
+              src="/dist/img/app-logo.png"
+              alt="Logo"
+            />
+          </a>
+        </div>
+        <div class="l-flex__item">
+          <a class="c-button c-button_light" href="#">Free 7-day Trial</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Primary Menu BEM -->
+    <nav class="c-primary-menu">
+      <div class="l-container l-flex l-flex_jc-space-between">
+        <a class="c-primary-menu__item" href="#">Train</a>
+        <div class="c-primary-menu__divider"></div>
+        <a class="c-primary-menu__item" href="play.html">Play</a>
+        <div class="c-primary-menu__divider"></div>
+        <a
+          class="c-primary-menu__item c-primary-menu__item_current"
+          href="index.html"
+          >Magnus</a
+        >
+        <div class="c-primary-menu__divider"></div>
+        <a class="c-primary-menu__item" href="#">News</a>
+      </div>
+    </nav>
+
+    <!-- Showcase BEM -->
+    <section class="c-showcase-invitational">
+      <img
+        class="c-showcase-invitational__background-image"
+        src="./img/showcase-invitational.jpg"
+        alt="Invitational"
+      />
+      <div class="l-container_invitational">
+        <a
+          class="c-button-invitational"
+          href="https://chess24.com/en/watch/live-tournaments/magnus-carlsen-invitational-2020/1/1/1"
+          target="_blank"
+        >
+          <i class="fas fa-arrow-right"></i>
+          Watch Live</a
+        >
+        <a
+          class="c-button-invitational c-button-invitational_transparent"
+          href="#"
+        >
+          <i class="fas fa-arrow-right"></i>
+          About
+        </a>
+      </div>
+    </section>
+
+    <!-- Secondary Menu BEM -->
+    <nav class="c-secondary-menu">
+      <div class="l-container l-flex l-flex_jc-flex-start">
+        <a
+          href="#"
+          class="c-secondary-menu__item c-secondary-menu__item_current"
+          >Home</a
+        >
+        <a href="#" class="c-secondary-menu__item">Coach</a>
+        <a href="#" class="c-secondary-menu__item">Bio</a>
+        <a href="#" class="c-secondary-menu__item">Statistics</a>
+        <a href="#" class="c-secondary-menu__item">Schedule</a>
+        <a href="#" class="c-secondary-menu__item">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Player Card & Videos -->
+    <section class="c-homepage-content">
+      <div class="l-container l-grid">
+        <div class="l-grid__item">
+          <aside class="c-profile">
+            <div class="l-flex l-flex_jc-flex-start l-flex_fd-column">
+              <div class="l-flex__item">
+                <img
+                  class="c-profile__image"
+                  src="./img/profile-card.jpg"
+                  alt="Photo"
+                />
+              </div>
+              <div class="l-flex__item">
+                <div class="l-flex-inner l-flex-inner_fd-column">
+                  <div class="l-flex-inner__item">
+                    <h2 class="c-profile__name">Magnus Carlsen</h2>
+                  </div>
+                  <div class="l-flex-inner__item">
+                    <div class="c-profile__nationality l-flex-inner-deeper">
+                      <div class="l-flex-inner-deeper__item">
+                        <img
+                          class="c-profile__country-flag"
+                          src="./img/no.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="l-flex-inner-deeper__item">
+                        <p class="c-profile__country-name">Norway</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="l-flex__item">
+                <div class="c-profile__stats">
+                  <div class="l-grid">
+                    <p class="c-profile__rank">#1</p>
+                    <p class="c-profile__rating">
+                      2872 <span class="c-profile__rating-data">(01.2020)</span>
+                    </p>
+                    <p class="c-profile__rank-title">std. rank</p>
+                    <p class="c-profile__rating-title">std. rating</p>
+                  </div>
+                </div>
+              </div>
+              <div class="l-flex__item">
+                <div
+                  class="c-profile__socials l-flex-inner l-flex-inner_jc-space-between"
+                >
+                  <div class="l-flex-inner__item">
+                    <a href="http://instagram.com"
+                      ><i class="fab fa-instagram fa-2x"></i
+                    ></a>
+                  </div>
+                  <div class="l-flex-inner__item">
+                    <a href="http://twitter.com"
+                      ><i class="fab fa-twitter fa-2x"></i
+                    ></a>
+                  </div>
+                  <div class="l-flex-inner__item">
+                    <a href="http://facebook.com"
+                      ><i class="fab fa-facebook-f fa-2x"></i
+                    ></a>
+                  </div>
+                  <div class="l-flex-inner__item">
+                    <a href="http://youtube.com"
+                      ><i class="fab fa-youtube fa-2x"></i
+                    ></a>
+                  </div>
+                  <div class="l-flex-inner__item">
+                    <a href="http://fide.com">
+                      <img src="./img/icon_fide.svg" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="l-flex__item">
+                <div
+                  class="c-profile__footer l-flex-inner l-flex-inner_fd-column l-flex-inner_ai-flex-start"
+                >
+                  <div class="l-flex-inner__item">
+                    <a class="c-profile__link" href="#">Biography</a>
+                  </div>
+                  <div class="l-flex-inner__item">
+                    <a class="c-profile__link" href="#">Statistics</a>
+                  </div>
+                  <div class="l-flex-inner__item">
+                    <a class="c-profile__link" href="#">Schedule</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="l-grid__item">
+          <h2 class="c-homepage-content__title">Latest Videos</h2>
+        </div>
+        <div class="l-grid__item">
+          <div class="c-video">
+            <iframe
+              width="100%"
+              height="170"
+              src="https://www.youtube.com/embed/e4Z6Bh19fAk"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="c-video__title">
+              Tactics Frenzy - John Bartholomew Edition
+            </h3>
+          </div>
+        </div>
+        <div class="l-grid__item">
+          <div class="c-video">
+            <iframe
+              width="100%"
+              height="170"
+              src="https://www.youtube.com/embed/QZi5DdW-F9k"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="c-video__title">
+              Le Puedes Ganar A Sebastian Mihajlov?
+            </h3>
+          </div>
+        </div>
+        <div class="l-grid__item">
+          <div class="c-video">
+            <iframe
+              width="100%"
+              height="170"
+              src="https://www.youtube.com/embed/zse7xXJg0OY"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="c-video__title">
+              Magnus Carlsen Commentary || Sebastian v Aryan, Part 2 || Office
+              Jam
+            </h3>
+          </div>
+        </div>
+        <div class="l-grid__item">
+          <div class="c-video">
+            <iframe
+              width="100%"
+              height="170"
+              src="https://www.youtube.com/embed/EeaS_YEjsow"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="c-video__title">
+              Magnus reveals dad’s only chess book…
+            </h3>
+          </div>
+        </div>
+        <div class="l-grid__item">
+          <div class="c-video">
+            <iframe
+              width="100%"
+              height="170"
+              src="https://www.youtube.com/embed/0e81vfC6Pis"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="c-video__title">
+              Press Conference Stockholm 30th January 2020
+            </h3>
+          </div>
+        </div>
+        <div class="l-grid__item">
+          <div class="c-video">
+            <iframe
+              width="100%"
+              height="170"
+              src="https://www.youtube.com/embed/RjNPbBYkL18"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="c-video__title">
+              Magnus Carlsen Commentary || Sebastian v Aryan || Office Jam
+            </h3>
+          </div>
+        </div>
+        <div class="l-grid__item">
+          <div class="c-video">
+            <iframe
+              width="100%"
+              height="170"
+              src="https://www.youtube.com/embed/LDAkZTdBVGo"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="c-video__title">
+              When You're Not Properly Warmed Up -- Magnus' Blooper Take
+            </h3>
+          </div>
+        </div>
+        <div class="l-grid__item">
+          <div class="c-video">
+            <iframe
+              width="100%"
+              height="170"
+              src="https://www.youtube.com/embed/DcXSd-3sv_8"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="c-video__title">
+              Magnus Carlsen Solves Chess Puzzles In New Timed Mode
+            </h3>
+          </div>
+        </div>
+        <div class="l-grid__item">
+          <div class="c-video">
+            <iframe
+              width="100%"
+              height="170"
+              src="https://www.youtube.com/embed/BiSebvqXRtg"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="c-video__title">
+              I shouldn’t be giving away my secrets, but…
+            </h3>
+          </div>
+        </div>
+        <div class="l-grid__item">
+          <div class="c-video">
+            <iframe
+              width="100%"
+              height="170"
+              src="https://www.youtube.com/embed/5ExqZIjNWQk"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <h3 class="c-video__title">
+              When the World Chess Champion Kibitzes On Your Tactics Frenzy Run
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Structure BEM -->
+    <section class="c-structure">
+      <div class="l-container l-grid l-grid-structure-homepage">
+        <div class="l-grid__item">
+          <h3 class="c-structure__header">Company</h3>
+          <ul class="c-structure__list">
+            <li><a class="c-structure__item" href="#">Blog</a></li>
+            <li><a class="c-structure__item" href="#">Contact Us</a></li>
+            <li><a class="c-structure__item" href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="l-grid__item">
+          <h3 class="c-structure__header">Magnus Trainer</h3>
+          <ul class="c-structure__list">
+            <li><a class="c-structure__item" href="#">Train Chess</a></li>
+            <li><a class="c-structure__item" href="#">Memberships</a></li>
+            <li><a class="c-structure__item" href="#">Lessons on Web</a></li>
+            <li><a class="c-structure__item" href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="l-grid__item">
+          <h3 class="c-structure__header">Play Magnus</h3>
+          <ul class="c-structure__list">
+            <li><a class="c-structure__item" href="#">Play Chess</a></li>
+            <li>
+              <a class="c-structure__item" href="#">Play Live Challenge</a>
+            </li>
+            <li><a class="c-structure__item" href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="l-grid__item">
+          <h3 class="c-structure__header">Tactics Frenzy</h3>
+          <ul class="c-structure__list">
+            <li>
+              <a class="c-structure__item" href="#">Play Tactics Frenzy</a>
+            </li>
+            <li><a class="c-structure__item" href="#">Memberships</a></li>
+            <li>
+              <a class="c-structure__item" href="#">Prizes (coming soon)</a>
+            </li>
+            <li><a class="c-structure__item" href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="l-grid__item">
+          <h3 class="c-structure__header">Connect</h3>
+          <div class="c-socials-black-white l-flex l-flex_jc-flex-start">
+            <div class="l-flex__item">
+              <a href="http://facebook.com"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </div>
+            <div class="l-flex__item">
+              <a href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="l-flex__item">
+              <a href="http://instagram.com"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            <div class="l-flex__item">
+              <a href="http://youtube.com"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sponsorhip BEM -->
+    <section class="c-sponsors-main">
+      <div class="l-container l-flex l-flex_ai-flex-start">
+        <div class="l-flex__item">
+          <img
+            class="c-sponsors-main__logo"
+            src="./img/logo-sponsor-artic.png"
+            alt="Arctic Securities"
+          />
+          <h4 class="c-sponsors-main__name">Arctic Securities</h4>
+          <p class="c-sponsors-main__description">
+            For both chess players and investors alike, precision is essential
+            and mistakes can be fatal. Arctic Securities is a leading,
+            independent Norwegian investment bank, specializing in corporate
+            finance transactions and advisory services, securities sales and
+            trading, as well as equity and credit research. I respect Arctic
+            Securities’ absolute commitment to integrity, quality and
+            independent research achievements. They focus on competence,
+            discretion and rapid execution – their core competitive advantages.
+          </p>
+        </div>
+        <div class="l-flex__item">
+          <img
+            class="c-sponsors-main__logo"
+            src="./img/logo-sponsor-simonsen.png"
+            alt="Simonsen Vogt Wiig"
+          />
+          <h4 class="c-sponsors-main__name">Simonsen Vogt Wiig</h4>
+          <p class="c-sponsors-main__description">
+            Simonsen Vogt Wiig has assisted me with legal advice since I was
+            thirteen – and they continue to today. When they told me that one of
+            their sayings was “failure is not an option” it reminded me of the
+            words of my former coach Garry Kasparov – “losing is not an option”.
+            Advokatfirmaet Simonsen Vogt Wiig is one of the leading law firms in
+            Norway. With approximately 170 lawyers and offices in Oslo, Bergen,
+            Trondheim, Kristiansand, Stavanger and Tromsø they are well
+            represented locally. Simonsen Vogt Wiig provides professional legal
+            assistance within all aspects of the business law. Their clients
+            includes Norwegian and foreign corporations, institutions,
+            organizations, individuals as well as government.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer BEM -->
+    <footer class="c-footer">
+      <div class="l-container l-flex l-flex_jc-space-between">
+        <div class="l-flex__item">
+          <div class="c-footer__left-side l-flex l-flex_jc-flex-start">
+            <p>&copy; Play Magnus 2019</p>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="l-flex__item">
+          <a href="#" class="c-footer__right-side">
+            <img class="c-footer__image-usa" src="./img/usa-flag.png" alt="" />
+            <span class="c-footer__span-underline">English</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

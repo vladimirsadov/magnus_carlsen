@@ -1,0 +1,17 @@
+// Variables
+$main-color: #05bd8f;
+$secondary-color: #004a9e;
+$light-color: #fff;
+$medium-color: #ccc;
+$dark-color: #111;
+$website-width: 1000px;
+$font-stack: Arial, Helvetica, sans-serif;
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
